@@ -17,5 +17,5 @@ io.on('connection', client => {
 })
 
 io.listen(5000, () => {
-  console.log('Listening ... 🚀 ')
+  console.log('Listening ... ')
 })
