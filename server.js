@@ -1,6 +1,7 @@
 const express = require('express')
 var cors = require('cors')
 const app = express()
+const PORT = process.env.PORT || 5000
 let http = require('http').createServer(app)
 let io = require('socket.io')(http)
 
@@ -16,6 +17,6 @@ io.on('connection', client => {
   })
 })
 
-io.listen(5000, () => {
+io.listen(PORT, () => {
   console.log('Listening ... ')
 })
